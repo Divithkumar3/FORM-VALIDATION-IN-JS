@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // function check(value){
+        //    if(value>0){
+        //        return "positive";
+        //    }
+        //    else if(value<0){
+        //        return "negative";
+        //    }
+        //    else{
+        //        return "zero";
+        //    }
+        // }
+        // console.log(check(0));
+//
+        // function max(num1,num2,num3){
+        //    if(num1>num2){
+        //        return(num1);
+        //    }
+        //    else if(num2>num3){
+        //         return(num2);
+        //    }
+        //    else{
+        //        return(num3);
+        //    }
+        // }
+        // console.log(max(10,20,30));
+//
+        // function leap(year){
+        //    if(year%4==0 || year%400==0 && year%100!=0){
+        //        return(year+" is a leap year");
+        //    }
+        //    else{
+        //        return(year+" is not a leap year");
+        //    }
+        // }
+        // console.log(leap(2024));
+
+        // let check=conform("Checking over")
+        // if(check==true){
+        //    alert("Yes")
+        // }
+        // else{
+        //    alert("No")
+        // }
+
+       // let a=20;
+       // let b=10;
+       // console.log(a+=b)
+       // console.log(a-=b)
+       // console.log(a*=b)
+       // console.log(a/=b)
+       // console.log(a!=b)
+       // let x=10;
+       // let y=20;
+       // console.log(x^y)
+
+
+       // let name="Divithkumar";
+       // console.log(name.slice(0,2));
+       // console.log(name.indexOf("k"));
+       // console.log(name.LastIndexOf("a"));
+       // console.log(name.toUpperCase());
+       // console.log(name.toLowerCase());
+
+       
+    </script>
+    <style>
+        
+        form{
+            position: absolute;
+            left: 550px;
+            top: 100px;
+            padding: 90px;
+            border-radius: 10px;
+            color: rgb(17, 17, 16);
+        }
+        img{
+            width: 100%;
+            height: 800px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form action="">
+        <input type="text"><br> <br>
+        <input type="text"><br> <br>
+        <button type="submit" onclick="message()">Click here</button>
+    </form> -->
+
+
+    <!-- <form  method="post" action="message.html" name="validateform" onsubmit="return validationform()" >
+        Username:
+        <input type="text" name="name" id="name"><br><br>
+        Password:
+        <input type="password" name="password" id="password"><br><br>
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form> -->
+    <img src="images.jpg" alt="">
+
+    <form action="index.html" method="post" name="validateform" onsubmit="return validationform()"><br><br>
+        Firstname: <input type="text" name="firstname" id="firstname" ><br><br>
+        Lastname: <input type="text" name="lastname" id="lastname" ><br><br>
+        City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" id="city"><br><br>
+        Number: &nbsp;&nbsp;&nbsp;<input type="phonenumber" name="number" id="number" ><br><br>
+        Address: &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address" id="address"></textarea><br><br>
+        <button type="submit" value="submit" onclick="call()">Submit</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">reset</button>
+    </form>
+   
+    <script>
+        
+     function validationform(){
+          var firstname=document.validateform.firstname.value;
+          var lastname=document.validateform.lastname.value;
+          var city=document.validateform.city.value;
+          var number=document.validateform.number.value;
+          var address=document.validateform.address.value;
+
+    
+          if(firstname==null || firstname=="" && lastname==null || lastname==""){
+              alert("Firstname and Lastname should not be empty");
+              return false;
+          }else if(number<=10){
+              alert("Number should be a 10 digit value");
+              return false;
+          }
+        }
+        function call(){
+            alert("Form submitted successfully")
+        }
+        
+
+
+       // function validationform(){
+       //     var name=document.validateform.name.value;
+       //     var password=document.validateform.password.value;
+       // 
+       //     if(name==null || name==""){
+       //         alert("name should not be blank");
+       //         return false;
+       //     }else if(password.length<6){
+       //         alert("Password length must be atleast 6 characters long");
+       //         return false;
+       //     }
+       // }
+    </script>
+</body>
+
+</html>
